@@ -364,11 +364,11 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-# OrchardCore specific
-App_Data/
-*.db
-*.db-shm
-*.db-wal
+# OrchardCore specific - KEEP DATABASE FOR DEPLOYMENT
+# App_Data/ - COMMENTED OUT to keep database
+# *.db - COMMENTED OUT to keep SQLite database
+# *.db-shm - COMMENTED OUT to keep SQLite temp files
+# *.db-wal - COMMENTED OUT to keep SQLite temp files
 
 # Temporary files
 *.tmp
