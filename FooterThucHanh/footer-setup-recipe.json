@@ -1,0 +1,245 @@
+{
+  "name": "Footer 3 Cột Setup",
+  "displayName": "Footer 3 Cột Dynamic Setup Recipe",
+  "description": "Tự động setup Footer 3 cột với Content Types và Widgets",
+  "author": "OpenHands",
+  "website": "https://github.com/khpt1976-cloud/baitapchuan3T11",
+  "version": "1.0.0",
+  "issetuprecipe": false,
+  "categories": ["footer", "widgets"],
+  "tags": ["footer", "3-column", "responsive"],
+  "steps": [
+    {
+      "name": "ContentDefinition",
+      "ContentTypes": [
+        {
+          "Name": "FooterSocial",
+          "DisplayName": "Footer Social",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "FooterSocial",
+              "Name": "FooterSocial",
+              "Settings": {},
+              "ContentPartFieldDefinitionRecords": [
+                {
+                  "FieldName": "TextField",
+                  "Name": "SocialTitle",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Social Title",
+                      "Description": "Tiêu đề cho phần social",
+                      "Required": true
+                    },
+                    "TextFieldSettings": {
+                      "Hint": "Ví dụ: Kết Nối Với Chúng Tôi"
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "FacebookUrl",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Facebook URL",
+                      "Description": "Link Facebook"
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "FacebookIcon",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Facebook Icon",
+                      "Description": "CSS class cho icon Facebook"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "FooterAbout",
+          "DisplayName": "Footer About",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "FooterAbout",
+              "Name": "FooterAbout",
+              "Settings": {},
+              "ContentPartFieldDefinitionRecords": [
+                {
+                  "FieldName": "TextField",
+                  "Name": "AboutTitle",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "About Title",
+                      "Description": "Tiêu đề cho phần about",
+                      "Required": true
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "WorkingHours",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Working Hours",
+                      "Description": "Giờ làm việc"
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "CompanyName",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Company Name",
+                      "Description": "Tên công ty"
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "Address",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Address",
+                      "Description": "Địa chỉ công ty"
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "Phone",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Phone",
+                      "Description": "Số điện thoại"
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "Email",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Email",
+                      "Description": "Email liên hệ"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "FooterContact",
+          "DisplayName": "Footer Contact",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "FooterContact",
+              "Name": "FooterContact",
+              "Settings": {},
+              "ContentPartFieldDefinitionRecords": [
+                {
+                  "FieldName": "TextField",
+                  "Name": "ContactTitle",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Contact Title",
+                      "Description": "Tiêu đề cho phần contact",
+                      "Required": true
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "CompanyName",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Company Name",
+                      "Description": "Tên công ty"
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "Address",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Address",
+                      "Description": "Địa chỉ"
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "Phone",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Phone",
+                      "Description": "Số điện thoại"
+                    }
+                  }
+                },
+                {
+                  "FieldName": "TextField",
+                  "Name": "Email",
+                  "Settings": {
+                    "ContentPartFieldSettings": {
+                      "DisplayName": "Email",
+                      "Description": "Email"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
