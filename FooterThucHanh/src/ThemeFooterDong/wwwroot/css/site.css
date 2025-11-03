@@ -21,6 +21,30 @@ main {
     padding: 20px;
 }
 
+/* ===== FOOTER ZONE STYLES - ORCHARDCORE CHUẨN ===== */
+.footer-zone {
+    margin-top: auto;
+    background-color: #343a40 !important;
+}
+
+.footer-zone .widget-container {
+    margin-bottom: 1rem;
+}
+
+.footer-zone h5 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer-zone p, .footer-zone a {
+    color: #adb5bd;
+}
+
+.footer-zone a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* ===== FOOTER STYLES - MAIN FEATURE ===== */
 footer {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
@@ -124,6 +148,10 @@ footer {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    
+    .footer-zone .row > div {
+        margin-bottom: 2rem;
     }
     
     .social-links {

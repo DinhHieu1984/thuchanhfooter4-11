@@ -1,2 +1,9 @@
 [Bb]in/
-[Oo]bj/
+[Oo]bj/# Logs and temporary files
+FooterThucHanh/FooterThucHanh.Web/App_Data/logs/
+FooterThucHanh/FooterThucHanh.Web/server.log
+FooterThucHanh/FooterThucHanh.Web/${var:configDir}/
+FooterThucHanh/FooterThucHanh.Web/wwwroot/Default/is-cache/
+*.log
+*.db
+packages-microsoft-prod.deb
