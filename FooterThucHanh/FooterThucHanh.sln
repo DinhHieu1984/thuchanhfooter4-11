@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooterThucHanh.Web", "FooterThucHanh.Web\FooterThucHanh.Web.csproj", "{0C9B783C-179C-4516-92CB-571CB12AEA86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooterThucHanh.Web", "FooterThucHanh.Web\FooterThucHanh.Web.csproj", "{ED81995F-590D-4303-B8A7-742EF725B237}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{79FDD02A-0E15-459A-B9D4-5050724ADCBD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1AADF4F2-DF7F-4C8E-9159-E4BF4B4EBEF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThemeFooterDong", "src\ThemeFooterDong\ThemeFooterDong.csproj", "{5572E2ED-7DAD-4150-B7F9-0DCBC9F000E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThemeFooterDong", "src\ThemeFooterDong\ThemeFooterDong.csproj", "{61A516FF-408F-47E7-BFE7-4A696056FB90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,16 +18,16 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C9B783C-179C-4516-92CB-571CB12AEA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C9B783C-179C-4516-92CB-571CB12AEA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C9B783C-179C-4516-92CB-571CB12AEA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C9B783C-179C-4516-92CB-571CB12AEA86}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5572E2ED-7DAD-4150-B7F9-0DCBC9F000E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5572E2ED-7DAD-4150-B7F9-0DCBC9F000E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5572E2ED-7DAD-4150-B7F9-0DCBC9F000E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5572E2ED-7DAD-4150-B7F9-0DCBC9F000E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED81995F-590D-4303-B8A7-742EF725B237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED81995F-590D-4303-B8A7-742EF725B237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED81995F-590D-4303-B8A7-742EF725B237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED81995F-590D-4303-B8A7-742EF725B237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61A516FF-408F-47E7-BFE7-4A696056FB90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A516FF-408F-47E7-BFE7-4A696056FB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A516FF-408F-47E7-BFE7-4A696056FB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A516FF-408F-47E7-BFE7-4A696056FB90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5572E2ED-7DAD-4150-B7F9-0DCBC9F000E3} = {79FDD02A-0E15-459A-B9D4-5050724ADCBD}
+		{61A516FF-408F-47E7-BFE7-4A696056FB90} = {1AADF4F2-DF7F-4C8E-9159-E4BF4B4EBEF9}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,137 @@
+/* Theme Footer Dong - Custom CSS */
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content area */
+main {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    margin-top: auto;
+}
+
+footer h5 {
+    color: #f39c12 !important;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+footer h5::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #f39c12;
+}
+
+footer p {
+    color: #bdc3c7;
+    line-height: 1.7;
+}
+
+footer a {
+    color: #ecf0f1 !important;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f39c12 !important;
+    text-decoration: none;
+}
+
+/* Social media icons */
+footer .d-flex a {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+footer .d-flex a:hover {
+    background-color: #f39c12;
+    transform: translateY(-2px);
+}
+
+/* Contact info icons */
+footer .fas, footer .fab {
+    color: #f39c12;
+    width: 20px;
+}
+
+/* Copyright section */
+footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    footer .col-md-6.text-md-end {
+        text-align: left !important;
+        margin-top: 1rem;
+    }
+    
+    footer .d-flex {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+/* Welcome message styling */
+.welcome-message {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.welcome-message h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+/* Animation for footer elements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer .col-md-4 {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+footer .col-md-4:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+footer .col-md-4:nth-child(3) {
+    animation-delay: 0.4s;
+}

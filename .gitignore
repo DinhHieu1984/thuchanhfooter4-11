@@ -11,11 +11,36 @@ ${var:*}/
 **/is-cache/
 *.meta
 
-# Keep database but exclude other App_Data files
+# App_Data files to exclude
 App_Data/logs/
 App_Data/Sites/Default/DataProtection-Keys/
+App_Data/Sites/Default/Media/
 
 # Keep these important files
 !App_Data/Sites/Default/OrchardCore.db
 !App_Data/Sites/Default/appsettings.json
 !App_Data/tenants.json
+
+# Visual Studio / IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet packages
+packages/
+*.nupkg
+
+# Node modules (if any)
+node_modules/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
