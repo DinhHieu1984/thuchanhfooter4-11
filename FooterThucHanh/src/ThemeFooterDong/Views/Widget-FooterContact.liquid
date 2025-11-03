@@ -1,0 +1,32 @@
+{% comment %}
+Template hiển thị Widget Footer Contact - FooterRight Zone
+Field paths: DisplayText (TitlePart), CompanyName.Text, Address.Text, Phone.Text, Email.Text
+{% endcomment %}
+
+<div class="footer-contact-content" style="color: white !important;">
+    <h5><i class="fas fa-phone me-2"></i>{{ Model.ContentItem.DisplayText }}</h5>
+    
+    <div class="contact-info">
+        <p class="mb-2">
+            <i class="fas fa-building me-2"></i>
+            <strong>{{ Model.ContentItem.CompanyName.Text }}</strong>
+        </p>
+        
+        <p class="mb-2">
+            <i class="fas fa-map-marker-alt me-2"></i>
+            {{ Model.ContentItem.Address.Text }}
+        </p>
+        
+        <p class="mb-2">
+            <i class="fas fa-phone me-2"></i>
+            {{ Model.ContentItem.Phone.Text }}
+        </p>
+        
+        <p class="mb-0">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:{{ Model.ContentItem.Email.Text }}" class="text-white text-decoration-none">
+                {{ Model.ContentItem.Email.Text }}
+            </a>
+        </p>
+    </div>
+</div>

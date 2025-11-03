@@ -1,0 +1,9 @@
+{% comment %}
+Template hiển thị Widget Footer About - FooterCenter Zone
+Field paths: DisplayText (TitlePart), AboutContent.Text
+{% endcomment %}
+
+<div class="footer-about-content" style="color: white !important;">
+    <h5>{{ Model.ContentItem.DisplayText }}</h5>
+    <p>{{ Model.ContentItem.AboutContent.Text }}</p>
+</div>

@@ -20,14 +20,30 @@ Tạo Layout.liquid với **3 ZONES FOOTER RIÊNG BIỆT** để tránh trùng l
 
 ### **BƯỚC 2.1: CẤU HÌNH 3 ZONES RIÊNG BIỆT**
 
-#### 📍 2.1.1: Truy cập Settings
-1. **Đăng nhập Admin Panel**: `http://localhost:5000/Admin`
-2. **Click menu "Configuration"** (bên trái)
-3. **Click "Settings"**
-4. **Click "Zones"** (trong danh sách Settings)
+#### 📍 2.1.1: Truy cập Settings (HƯỚNG DẪN CHI TIẾT)
+1. **Đăng nhập Admin Panel**: 
+   - Mở trình duyệt web
+   - Truy cập: `http://localhost:41481/Admin`
+   - Đăng nhập với tài khoản admin đã tạo
 
-#### ⚙️ 2.1.2: Khai báo Zones
-**Trong ô "Zones"**, thay thế nội dung bằng:**
+2. **Vào mục Zones (ĐÚNG)**: 
+   - Click vào **"Design"** (menu bên trái) để mở rộng menu
+   - Click vào **"Settings"** 
+   - Click vào **"Zones"**
+   - **Đường dẫn trực tiếp**: `http://localhost:41481/Admin/Settings/Zones`
+
+⚠️ **LƯU Ý**: Không phải "Configuration" → "Settings" như hướng dẫn cũ!
+
+#### ⚙️ 2.1.2: Khai báo Zones (CHI TIẾT)
+1. **Tìm phần "Available zones for Layers"**:
+   - Sẽ thấy ô text input có sẵn nội dung: `Content`
+   
+2. **Thêm zones mới**:
+   - Đặt con trỏ chuột vào cuối từ `Content`
+   - Thêm dấu phẩy và khoảng trắng: `, `
+   - Gõ thêm: `FooterLeft, FooterCenter, FooterRight`
+   
+3. **Kết quả cuối cùng**:
 ```
 Content, FooterLeft, FooterCenter, FooterRight
 ```
@@ -36,10 +52,20 @@ Content, FooterLeft, FooterCenter, FooterRight
 - **KHÔNG dùng**: `Content, Footer` (gây trùng lặp)
 - **PHẢI dùng**: `Content, FooterLeft, FooterCenter, FooterRight`
 - **Phân cách bằng dấu phẩy và khoảng trắng**
+- **Chính xác như hình ảnh đã chụp**
 
-#### 💾 2.1.3: Lưu Settings
-1. **Click nút "Save"** (màu xanh)
-2. **Xác nhận thông báo thành công**
+#### 💾 2.1.3: Lưu Settings (CHI TIẾT)
+1. **Click nút "Save"** (màu xanh ở cuối trang)
+2. **Hệ thống sẽ hiển thị thông báo thành công**
+3. **Trang sẽ reload và hiển thị zones đã được cập nhật**
+
+#### 🔍 2.1.4: Kiểm tra Zones đã tạo
+1. Vào **Design** → **Widgets**
+2. Khi tạo widget mới, sẽ thấy dropdown **"Zone"** có 4 lựa chọn:
+   - Content
+   - FooterLeft
+   - FooterCenter
+   - FooterRight
 
 ---
 
