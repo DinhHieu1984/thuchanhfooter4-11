@@ -1,2 +1,21 @@
+# Build directories
 [Bb]in/
-[Oo]bj/# Logs and temporary files
+[Oo]bj/
+
+# Logs and temporary files
+*.log
+server.log
+
+# OrchardCore cache and config
+${var:*}/
+**/is-cache/
+*.meta
+
+# Keep database but exclude other App_Data files
+App_Data/logs/
+App_Data/Sites/Default/DataProtection-Keys/
+
+# Keep these important files
+!App_Data/Sites/Default/OrchardCore.db
+!App_Data/Sites/Default/appsettings.json
+!App_Data/tenants.json
