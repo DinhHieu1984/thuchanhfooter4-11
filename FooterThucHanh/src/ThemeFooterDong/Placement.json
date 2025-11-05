@@ -1,5 +1,11 @@
 {
-  "FooterSocial": "Widget-FooterSocial",
-  "FooterAbout": "Widget-FooterAbout", 
-  "FooterContact": "Widget-FooterContact"
+  "FooterSocial": {
+    "Content": "Content:1"
+  },
+  "FooterAbout": {
+    "Content": "Content:1"
+  },
+  "FooterContact": {
+    "Content": "Content:1"
+  }
 }

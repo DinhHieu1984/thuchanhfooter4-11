@@ -1,17 +1,2 @@
-{% comment %}
-Template hiển thị Widget Footer About - FooterCenter Zone
-{% endcomment %}
-
-<div style="background: orange; color: white; padding: 10px; border: 3px solid blue;">
-    <h1>🟠 DEBUG: FOOTERABOUT TEMPLATE LOADED!</h1>
-    <p><strong>Title:</strong> {{ Model.ContentItem.DisplayText }}</p>
-    <p><strong>AboutContent:</strong> {{ Model.ContentItem.AboutContent.Text }}</p>
-    
-    <!-- Hiển thị tất cả data -->
-    <details>
-        <summary>Click để xem tất cả data</summary>
-        <pre style="color: yellow; font-size: 12px;">
-            {{ Model | json }}
-        </pre>
-    </details>
-</div>
+<h5><i class="fas fa-info-circle"></i> {{ Model.DisplayText }}</h5>
+<p>{{ Model.AboutContent.Text }}</p>

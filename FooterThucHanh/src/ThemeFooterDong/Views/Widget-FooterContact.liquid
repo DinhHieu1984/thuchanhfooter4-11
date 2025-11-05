@@ -1,20 +1,9 @@
-{% comment %}
-Template hiển thị Widget Footer Contact - FooterRight Zone
-{% endcomment %}
-
-<div style="background: purple; color: white; padding: 10px; border: 3px solid green;">
-    <h1>🟣 DEBUG: FOOTERCONTACT TEMPLATE LOADED!</h1>
-    <p><strong>Title:</strong> {{ Model.ContentItem.DisplayText }}</p>
-    <p><strong>CompanyName:</strong> {{ Model.ContentItem.CompanyName.Text }}</p>
-    <p><strong>Address:</strong> {{ Model.ContentItem.Address.Text }}</p>
-    <p><strong>Phone:</strong> {{ Model.ContentItem.Phone.Text }}</p>
-    <p><strong>Email:</strong> {{ Model.ContentItem.Email.Text }}</p>
-    
-    <!-- Hiển thị tất cả data -->
-    <details>
-        <summary>Click để xem tất cả data</summary>
-        <pre style="color: yellow; font-size: 12px;">
-            {{ Model | json }}
-        </pre>
-    </details>
+<h5><i class="fas fa-phone"></i> {{ Model.DisplayText }}</h5>
+<div class="contact-info">
+    <p><i class="fas fa-building"></i> <strong>{{ Model.CompanyName.Text }}</strong></p>
+    <p><i class="fas fa-map-marker-alt"></i> {{ Model.Address.Text }}</p>
+    <p><i class="fas fa-phone"></i> {{ Model.Phone.Text }}</p>
+    <p><i class="fas fa-envelope"></i> 
+        <a href="mailto:{{ Model.Email.Text }}" class="text-white">{{ Model.Email.Text }}</a>
+    </p>
 </div>

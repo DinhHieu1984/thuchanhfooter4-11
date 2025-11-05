@@ -1,18 +1,7 @@
-{% comment %}
-Template hiển thị Widget Footer Social - FooterLeft Zone
-{% endcomment %}
-
-<div style="background: red; color: white; padding: 10px; border: 3px solid yellow;">
-    <h1>🔴 DEBUG: FOOTERSOCIAL TEMPLATE LOADED!</h1>
-    <p><strong>Title:</strong> {{ Model.ContentItem.DisplayText }}</p>
-    <p><strong>SocialUrl:</strong> {{ Model.ContentItem.SocialUrl.Text }}</p>
-    <p><strong>SocialIcon:</strong> {{ Model.ContentItem.SocialIcon.Text }}</p>
-    
-    <!-- Hiển thị tất cả data -->
-    <details>
-        <summary>Click để xem tất cả data</summary>
-        <pre style="color: yellow; font-size: 12px;">
-            {{ Model | json }}
-        </pre>
-    </details>
+<h5><i class="fas fa-share-alt"></i> {{ Model.DisplayText }}</h5>
+<p>Kết nối với chúng tôi trên mạng xã hội để cập nhật thông tin mới nhất!</p>
+<div class="social-links">
+    <a href="{{ Model.SocialLink.Text }}" class="text-white" target="_blank">
+        <i class="fab fa-facebook fa-2x"></i>
+    </a>
 </div>
